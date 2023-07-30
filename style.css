@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background:  hsl(216, 12%, 8%);
+    min-width: 375px;
+    max-width: 1440px;
+    font-size: 15px;                                                                                                          
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 375px;
+    padding: 20px;
+    position: relative;
+}
+
+.card .card-container,
+.card .card-thanks {
+    background:  hsl(213, 19%, 18%);
+    border-radius: 20px;
+    padding: 25px 20px;
+}
+
+.card .card-container{
+    position: relative;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.card .card-thanks {
+    text-align: center;
+    transition: all 1s ease;
+    opacity: 0;
+    position: absolute;
+    margin: -250px 0 0 0 ;
+    z-index: 1;
+}
+
+.star {
+    width: 40px;
+    height: 40px;
+    background: hsla(216, 12%, 54%, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.card-container h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    color: hsl(0, 0%, 100%);
+}
+
+.card-container .anser,
+.card-thanks .print2 {
+    line-height: 25px;
+    color: hsl(217, 12%, 63%);
+}
+
+.numbers {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.numbers .number {
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    color: hsl(217, 12%, 63%);
+    background: hsla(216, 12%, 54%, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all 0.3s ease;
+}
+
+.number:hover {
+    background: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+
+}
+
+
+button {
+    border-radius: 25px;
+    background: hsl(25, 97%, 53%);
+    padding: 15px 0;
+    width: 100%;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition:all 0.3s ease;
+}
+
+button:hover {
+    color: hsl(25, 97%, 53%);
+    background: hsl(0, 0%, 100%);
+}
+
+.card-thanks .print {
+    background: hsla(216, 12%, 54%, 0.1);
+    padding: 4px 16px;
+    border-radius: 25px;
+    color: hsl(25, 97%, 53%);
+}
+
+.txt {
+    margin: 25px 0;
+}
+
+.titulo {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 15px;
+}
